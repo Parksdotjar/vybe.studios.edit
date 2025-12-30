@@ -615,13 +615,13 @@
           </div>
 
           <h1>
-            High‑impact Minecraft edits
-            built with studio‑level polish.
+            High Level Minecraft Promos
+            for a Fair Price
           </h1>
 
           <p class="sub">
-            <span id="nameInline">VYBE STUDIOS</span> is a small, fast editing studio for creators.
-            We deliver snappy pacing, clean typography, and VFX‑style moments — without overdoing it.
+            <span id="nameInline">VYBE STUDIO</span> is a small yet professional editing studio
+            ready to fit your SMP promo needs.
           </p>
 
           <div class="ctaRow">
@@ -643,8 +643,9 @@
           <div class="shotBody">
             <p class="miniTitle">A clean workflow for creators</p>
             <p class="miniSub">
-              Replace the name later in one spot. Drop in your best clips.
-              Keep everything monochrome with rounded boxes — like Linear.
+              From fast‑paced recruitment trailers to cinematic season reveals,
+              this section highlights how your promo can look with clean motion
+              and clear storytelling.
             </p>
 
             <div class="grid">
@@ -673,13 +674,13 @@
         <div class="sectionHead">
           <div>
             <h2>Portfolio</h2>
-            <p class="hint">Recent SMP promos. Click to watch.</p>
+            <p class="hint">A selection of recent SMP promo work showcasing different styles and pacing.</p>
           </div>
           <span class="badge">SMP promos</span>
         </div>
 
         <div class="portfolio">
-          <a class="work" href="https://www.youtube.com/watch?v=D_qr4wZ954A" target="_blank" rel="noopener" title="Open on YouTube">
+          <a class="work" href="https://www.youtube.com/watch?v=0GsOC_ZRUXw" target="_blank" rel="noopener" title="Open on YouTube">
             <div class="workLeft">
               <div class="workTitle">SMP Promo — Authority</div>
               <div class="workMeta">Pacing • impact frames • clean typography</div>
@@ -717,7 +718,7 @@
         <div class="sectionHead">
           <div>
             <h2>Pricing</h2>
-            <p class="hint">We only do SMP promos right now. Pricing is per second of final video.</p>
+            <p class="hint">All pricing is based on SMP promo work and is calculated per second of the final video.</p>
           </div>
           <span class="badge">per‑second</span>
         </div>
@@ -764,22 +765,20 @@
         </div>
 
         <div style="height:12px"></div>
-        <p class="hint" style="margin:0">
-          Example: a 30s promo = $24 (Simple) / $28.50 (Mid) / $39 (High End).
-        </p>
+        <p class="hint" style="margin:0">Pricing scales clearly with length so you know exactly what you’re paying for.</p>
       </section>
 
       <section class="anchor" id="contact">
         <div class="sectionHead">
           <div>
             <h2>Contact</h2>
-            <p class="hint">This form is front-end only. Connect it to Formspree/Netlify Forms later.</p>
+            
           </div>
           <span class="badge">fast replies</span>
         </div>
 
         <div class="contact">
-          <form class="form" onsubmit="return fakeSubmit(event)">
+          <form class="form" action="https://formspree.io/f/mlgeyzwg" method="POST">
             <div class="field">
               <label for="name">Name</label>
               <input id="name" name="name" placeholder="Your name" autocomplete="name" required />
@@ -797,18 +796,17 @@
               <textarea id="msg" name="message" placeholder="Length, deadline, examples you like, link to clips..." required></textarea>
             </div>
             <button class="btn primary" type="submit">Send message</button>
-            <span id="formNote" style="margin-left:10px;color:var(--muted);font-size:12.5px"></span>
+            
           </form>
 
           <aside class="side">
             <h3>Quick info</h3>
             <p>
-              Add your socials and booking links here.
-              Keep it clean and monochrome — it matches the Linear vibe.
+              You can reach out directly to discuss timelines, pricing, and what style best fits your server or event.
             </p>
             <div class="links">
-              <div class="linkRow"><span class="badge">Discord</span><span style="color:var(--muted)">@yourhandle</span></div>
-              <div class="linkRow"><span class="badge">Email</span><span style="color:var(--muted)">contact@yourdomain.com</span></div>
+              <div class="linkRow"><span class="badge">Discord</span><span style="color:var(--muted)">@yourlocalparkx</span></div>
+              <div class="linkRow"><span class="badge">Email</span><span style="color:var(--muted)">vybe.studios@outlook.com</span></div>
               <div class="linkRow"><span class="badge">Turnaround</span><span style="color:var(--muted)">1–3 days</span></div>
             </div>
             <div style="height:14px"></div>
@@ -910,16 +908,8 @@
     drawer?.addEventListener("click", (e)=>{ if(e.target === drawer) closeDrawer(); });
     window.addEventListener("keydown", (e)=>{ if(e.key === "Escape") closeDrawer(); });
 
-    // Fake submit
-    function fakeSubmit(e){
-      e.preventDefault();
-      const note = document.getElementById("formNote");
-      note.textContent = "Sent (demo). Hook this to a real form service later.";
-      setTimeout(()=> note.textContent = "", 3800);
-      e.target.reset();
-      return false;
-    }
-    window.fakeSubmit = fakeSubmit;
+    
   </script>
 </body>
 </html>
+
